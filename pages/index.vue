@@ -1,5 +1,6 @@
 <template>
   <NuxtLayout name="default">
-    <p>hey</p>
+    <Hero />
+    <ProductFeaturedList />
   </NuxtLayout>
 </template>

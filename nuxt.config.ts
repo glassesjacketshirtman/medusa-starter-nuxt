@@ -12,9 +12,12 @@ export default defineNuxtConfig({
   image: {
     domains: ["nuxtjs.org"],
   },
+  imports: {
+    dirs: ["composables/**"],
+  },
   runtimeConfig: {
     public: {
-      medusaBackendUrl: "http://localhost:9000",
+      medusaBackendUrl: "",
     },
   },
 });

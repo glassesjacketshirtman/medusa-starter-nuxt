@@ -1,16 +1,10 @@
 <template>
   <header class="grid px-4 py-2 grid-cols-3 items-center">
     <HeaderToggle class="lg:hidden" />
-    <MobileMenu />
-
-    <NuxtLink
-      to="/"
-      class="text-center lg:text-left font-display text-3xl text-body-700"
-    >
-      {{ appConfig.brand.name }}
-    </NuxtLink>
+    <Logo class="text-center lg:text-left" />
     <HeaderNav />
     <div id="actions" />
+    <MobileMenu />
   </header>
 </template>
 

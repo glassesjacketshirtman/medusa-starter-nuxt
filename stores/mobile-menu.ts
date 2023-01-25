@@ -1,9 +1,9 @@
 import { defineStore } from "pinia";
 
-type Screen = "main";
+type Screen = "main" | "collections";
 
 export const useMobileMenu = defineStore("mobile-menu", () => {
-  const { state, open, close, toggle } = useToggleState(false);
+  const { state, open, close, toggle } = useToggleState();
   const { width } = useWindowSize();
   const screen = ref<Screen>("main");
 

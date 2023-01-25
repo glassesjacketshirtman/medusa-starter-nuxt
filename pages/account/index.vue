@@ -1,5 +1,5 @@
 <template>
-  <div>Account page</div>
+  <NuxtLayout name="default">Account page</NuxtLayout>
 </template>
 
 <script lang="ts" setup></script>

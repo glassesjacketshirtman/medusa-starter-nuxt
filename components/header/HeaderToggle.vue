@@ -1,7 +1,7 @@
 <template>
-  <div v-bind="$attrs">
-    <IconHamburger @click="open" />
-  </div>
+  <button class="py-2 lg:hidden" role="button" @click="open">
+    <IconHamburger />
+  </button>
 </template>
 
 <script lang="ts" setup>

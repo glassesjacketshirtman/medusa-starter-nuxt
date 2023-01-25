@@ -1,9 +1,9 @@
 <template>
   <Transition name="mobile-menu">
-    <div v-if="mobileMenu.state" class="fixed inset-0 z-50 bg-black/80"></div>
+    <div v-if="mobileMenu.state" class="fixed inset-0 z-49 bg-black/80"></div>
   </Transition>
   <Transition name="drawer">
-    <div v-if="mobileMenu.state" class="absolute inset-0 z-[51] bg-white">
+    <div v-if="mobileMenu.state" class="absolute inset-0 z-50 bg-white">
       <slot />
     </div>
   </Transition>

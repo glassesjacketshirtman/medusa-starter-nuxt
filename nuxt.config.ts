@@ -13,11 +13,28 @@ export default defineNuxtConfig({
     domains: ["nuxtjs.org"],
   },
   imports: {
-    dirs: ["composables/**"],
+    dirs: ["composables/**", "utils/**"],
   },
   runtimeConfig: {
     public: {
       medusaBackendUrl: "",
+    },
+  },
+  app: {
+    head: {
+      link: [
+        { rel: "icon", href: "/favicon.png" },
+        { rel: "preconnect", href: "https://fonts.googleapis.com" },
+        {
+          rel: "preconnect",
+          href: "https://fonts.gstatic.com",
+          crossorigin: "anonymous",
+        },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;500;600;700;800&display=swap",
+        },
+      ],
     },
   },
 });

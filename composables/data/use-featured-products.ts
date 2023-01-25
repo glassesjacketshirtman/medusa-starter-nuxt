@@ -1,11 +1,11 @@
 import { Product } from "@medusajs/medusa";
 
 export default async function useFeaturedProducts() {
-  const { $medusaClient } = useNuxtApp();
+  const { $medusa } = useNuxtApp();
 
   const fetchFeaturedProducts = async () => {
     try {
-      const { products } = await $medusaClient.products.list({
+      const { products } = await $medusa.products.list({
         is_giftcard: false,
         limit: 4,
       });

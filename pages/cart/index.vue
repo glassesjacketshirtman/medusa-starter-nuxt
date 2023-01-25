@@ -1,5 +1,5 @@
 <template>
-  <div>Cart page</div>
+  <NuxtLayout name="default">Cart page</NuxtLayout>
 </template>
 
 <script lang="ts" setup></script>

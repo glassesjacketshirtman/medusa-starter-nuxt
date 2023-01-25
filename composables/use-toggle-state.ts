@@ -7,7 +7,6 @@ export default function useToggleState(initialState: boolean = false) {
 
   const open = () => {
     state.value = true;
-    console.log(state.value);
   };
 
   const toggle = () => {

@@ -5,8 +5,6 @@
 </template>
 
 <script lang="ts" setup>
-import {} from "@nuxt/image-edge";
-
 type ImageProps = {
   src: string;
   fit?: "fill" | "none" | "scale-down" | "cover" | "contain";

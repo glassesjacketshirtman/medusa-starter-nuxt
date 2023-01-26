@@ -1,6 +1,6 @@
 <template>
   <MenuMobileContainer>
-    <div class="grid grid-cols-3 items-center">
+    <div class="grid px-4 py-2 grid-cols-3 items-center">
       <div>language</div>
       <Logo class="text-center" />
       <div class="text-right" @click="menu.close">close</div>

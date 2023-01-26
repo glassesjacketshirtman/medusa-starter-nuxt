@@ -1,8 +1,8 @@
 <template>
-  <div class="relative h-[45vh] lg:h-[65vh] bg-brand-500">
+  <div class="relative h-[45vh] lg:h-[65vh] bg-brand-700">
     <NuxtImg
       src="/img/hero.jpg"
-      class="absolute w-full h-full object-cover opacity-50"
+      class="absolute w-full h-full object-cover opacity-30"
     />
 
     <div class="relative flex flex-col justify-center h-full px-4 text-center">
@@ -10,7 +10,7 @@
         A sophisticated Medusa starter template
       </h3>
       <span class="text-xl text-white pt-2 drop-shadow-md">
-        Made with Nuxt 3
+        Powered by Nuxt 3
       </span>
     </div>
   </div>

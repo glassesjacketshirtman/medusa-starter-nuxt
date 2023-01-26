@@ -1,9 +1,9 @@
 <template>
-  <Transition name="mobile-menu">
-    <div v-if="mobileMenu.state" class="fixed inset-0 z-49 bg-black/80"></div>
+  <Transition name="backdrop">
+    <div v-if="mobileMenu.state" class="fixed inset-0 z-50 bg-black/80"></div>
   </Transition>
   <Transition name="drawer">
-    <div v-if="mobileMenu.state" class="absolute inset-0 z-50 bg-white">
+    <div v-if="mobileMenu.state" class="fixed inset-0 z-50 bg-white">
       <slot />
     </div>
   </Transition>
@@ -16,17 +16,17 @@ const mobileMenu = useMobileMenu();
 </script>
 
 <style>
-.mobile-menu-enter-active,
-.mobile-menu-leave-active {
+.backdrop-enter-active,
+.backdrop-leave-active {
   transition: opacity 0.5s ease;
 }
 
-.mobile-menu-enter-from,
-.mobile-menu-leave-to {
+.backdrop-enter-from,
+.backdrop-leave-to {
   opacity: 0;
 }
 
-.mobile-menu-leave-to {
+.backdrop-leave-to {
   transition-delay: 100ms;
 }
 

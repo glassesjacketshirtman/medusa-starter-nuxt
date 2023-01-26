@@ -17,7 +17,7 @@ module.exports = {
           ...colors.zinc,
         },
         brand: {
-          ...colors.zinc,
+          ...colors.slate,
         },
       },
       fontFamily: {
